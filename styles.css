@@ -151,12 +151,15 @@ img{
 
 .contact{
     color: var(--dark-pink);
-    padding: 2rem;
+    padding: 2.5rem;
     margin: 4em;
+    display: block;
 }
 form{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+
+    /* flex-direction: column;
+    flex-wrap: wrap; */
 }
 input{
     background-color: #FBC5C5;
@@ -288,6 +291,9 @@ hr{
 
 .about{
     margin: 3rem 20%;
+}
+.input{
+    max-width: 50%;
 }
 
 a { 
