@@ -156,10 +156,10 @@ img{
     display: block;
 }
 form{
-    display: grid;
+    display: flex;
 
-    /* flex-direction: column;
-    flex-wrap: wrap; */
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 input{
     background-color: #FBC5C5;
@@ -167,6 +167,7 @@ input{
     border-radius: 2rem;
     padding: 0.5rem;
     margin-bottom: 1em;
+    width: -moz-available;
 }
 textarea{
     background-color: #FBC5C5;
@@ -174,6 +175,7 @@ textarea{
     border-radius: 1rem;
     padding: 0.5rem;
     margin-bottom: 1em;
+    width: -moz-available;
 }
 
 
@@ -182,6 +184,11 @@ hr{
     margin: 0.5rem;
 }
 
+.resume{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
 
 /* SMALL SCREEN */
 
@@ -292,8 +299,11 @@ hr{
 .about{
     margin: 3rem 20%;
 }
+.contact{
+    display: block;
+}
 .input{
-    max-width: 50%;
+    width: -moz-available;
 }
 
 a { 
