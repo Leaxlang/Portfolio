@@ -1,14 +1,6 @@
-/* 
-TO DO:
-- grid for small displays in ONE line 
-- grid looking pretty 
-- images 
-- text
-
-*/
-
 @import url("https://use.typekit.net/eia1ytr.css");
 
+/* Variables */
 :root {
     --dark-red: #9F2850;
     --dark-pink: #C53263;
@@ -17,6 +9,8 @@ TO DO:
     --dark-green: #377D71;
     --light-green: #BBCD8F;
 }
+
+/* Body - Background and font */
 body{
     font-family: gelica, serif;
     font-style: normal;
@@ -27,6 +21,7 @@ body{
     background-blend-mode: color-burn;
 }
 
+/* Sidebar Style */
 .navi{
     position: fixed;
     display: flex;
@@ -47,10 +42,10 @@ body{
     z-index: 99;
 }
 
+
 #active{
     /* color: var(--dark-green); */
 }
-
 
 
 .postcard{
@@ -230,14 +225,28 @@ hr{
         margin-top: 10em;
         margin-bottom: 0;
     }
-    
+    .about{
+        padding: 1rem;
   }
+  .contact{
+    padding: 1rem;
+}
+
+
+/* TINY */
 /* 
   @media only screen and (max-width: 500px) {
     .code-grid{
         grid-template-columns: repeat(1,1fr);
     }
   } */
+
+
+
+
+
+
+  /* SUPER WIDE */
 
   @media only screen and (min-width: 1200px) {
     .code-grid {
