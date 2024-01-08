@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/eia1ytr.css");
 
+
 /* Variables */
 :root {
     --dark-red: #9F2850;
@@ -9,7 +10,6 @@
     --dark-green: #377D71;
     --light-green: #BBCD8F;
 }
-
 
 
 
@@ -32,6 +32,29 @@ i{
 }
 
 
+.navi.show{
+    display: block !important;
+}
+
+.burger.show{
+    display: none !important;
+} 
+
+.burgerCross.show{
+    display: block !important;
+}
+
+.navi.unshow{
+    display: none !important;
+}
+
+.burger.unshow{
+    display: block !important;
+} 
+
+.burgerCross.unshow{
+    display: none !important;
+}
 
 
 /* Body - Background and font */
@@ -47,7 +70,7 @@ body{
 
 /* Sidebar Style */
 .navi{
-    position: fixed;
+    /* position: fixed;
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -56,7 +79,7 @@ body{
     right: 0px;
     margin: 2rem 3rem;
     padding: 1em 3em;
-    padding-left:1.7em;
+    padding-left:1.7em; */
     border: 2px solid var(--dark-pink);
     border-radius: 2rem;
     background-color: var(--medium-pink);
@@ -64,6 +87,25 @@ body{
     box-shadow:2px 2px var(--dark-pink);
     font-size: 0.85em;
     z-index: 99;
+
+    padding: 1em 3em;
+    display: flex;
+        position: sticky;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        margin: 0;
+        /* margin-top: -8.5em; */
+
+        top: 1em;
+         left: 15%;
+        /* margin-left: -252px; */
+
+        /* right: 50%; */
+        width: 65%;
+        font-size: 0.8rem;
+        /* transform: translateX(50%); */
+    
 }
 
 .fa{
@@ -146,9 +188,6 @@ p{
     color: var(--dark-red);
 }
 
-img{
-    padding: 0.5rem;
-}
 .project-box{
     background-color: var(--medium-pink);
     border: 2px solid var(--dark-pink);
@@ -163,7 +202,6 @@ img{
     box-shadow:4px 4px var(--dark-pink);
     transition: 0.2s;
     transform: translate(-2px, -2px);
-
 }
 
 .wide a{
@@ -333,23 +371,7 @@ hr{
         border-radius: 1.5rem;
     } */
 
-    .navi{
-        position: sticky;
-        flex-direction: row;
-        justify-content: space-evenly;
-        text-align: center;
-        margin: 0;
-        /* margin-top: -8.5em; */
-
-        top: 1em;
-         left: 15%;
-        /* margin-left: -252px; */
-
-        /* right: 50%; */
-        width: 65%;
-        font-size: 0.8rem;
-        /* transform: translateX(50%); */
-    }
+   
 
     title{
         margin-top: 10em;
@@ -374,14 +396,77 @@ hr{
 }
 }
 
+@media only screen and (min-width: 771px) {
+    .burger{
+        display: none !important; 
+    }
+    .burgerCross{
+        display: none !important; 
+    }
+}
+
+
 
 /* TINY */
-/* 
-  @media only screen and (max-width: 500px) {
-    .code grid{
-        grid-template-columns: repeat(1,1fr);
+
+  @media only screen and (max-width: 770px) {
+    
+    .navi{
+        display: none;
+        left:9%;
     }
-  } */
+    .burger{
+        display: block;
+        position: fixed;
+        z-index: 10;
+        color: var(--dark-red);
+        margin-left: 1rem;
+        margin-top: -4.5rem;
+        background-color: var(--medium-pink);
+        padding: 0.7rem;
+        border: 2px solid var(--dark-pink);
+        border-radius: 25%;
+
+    }
+
+    .burger .project-box:hover{
+        box-shadow:4px 4px var(--dark-pink);
+        transition: 0.2s;
+        transform: translate(-2px, -2px);
+    }
+
+
+    h1{
+        margin-top: 6rem;
+    }
+
+    .burgerCross{
+    display: none !important;
+    color: var(--dark-red);
+    margin-top: 1rem;
+    /* margin-top: 2rem;
+    margin-left: 2rem; */
+    }
+
+    .contact{
+        margin: 2rem;
+    }
+    .postcard1{
+        border-radius: 2rem;
+    }
+    .postcard2{
+        border-radius: 2rem;
+    }
+    /* .postcard image{
+        padding: 0 0;
+    } */
+
+
+
+    
+    
+}
+
 
 
 
@@ -398,11 +483,6 @@ hr{
         padding: 0 10em;
     }
 
-
-   
-
-    
-
     .about{
         margin: 3rem 20%;
     }
@@ -412,7 +492,6 @@ hr{
     .input{
         width: -moz-available;
     }
-
 
     .detail{
         margin: 10%;
@@ -437,6 +516,25 @@ hr{
         border-radius: 20rem;
         align-self: center;
         cursor: pointer;
+    }
+
+    .navi{
+        position: fixed;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        margin: 0;
+        /* margin-top: -8.5em; */
+
+        top: 1em;
+         left: 15%;
+         
+        /* margin-left: -252px; */
+
+        /* right: 50%; */
+        width: 65%;
+        font-size: 0.8rem;
+        /* transform: translateX(50%); */
     }
 
 

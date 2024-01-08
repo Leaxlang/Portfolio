@@ -1,3 +1,164 @@
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+// function openMenu() {
+//   var navi = document.getElementsByClassName("navi");
+//   var menuBurger = document.getElementById("burger");
+//   var menuCross = document.getElementById("burgerCross");
+  
+//   menuBurger.style.display = "none !important";
+//   menuCross.style.display = "block !important";
+
+//   for (var i = 0; i < navi.length; i++) {
+//     var element = navi[i];
+//       element.style.display = "block !important";
+//   }
+//  }
+
+//  function closeMenu(){
+//   var navi = document.getElementsByClassName("navi");
+//   var menuBurger = document.getElementById("burger");
+//   var menuCross = document.getElementById("burgerCross");
+  
+//   menuBurger.style.display = "block !important";
+//   menuCross.style.display = "none !important";
+
+//   for (var i = 0; i < navi.length; i++) {
+//     var element = navi[i];
+//       element.style.display = "none !important";
+//   }
+//  }
+ 
+
+document.addEventListener('DOMContentLoaded', initNav);
+
+function initNav() {
+ const burger = document.querySelector('#burger');
+//  const cross = document.querySelector('#burgerCross');
+ const nav = document.querySelector('.navi'); // renamed from 'nav' to 'navElement'
+
+
+
+ burger.addEventListener('click', () => {
+   nav.classList.add('show');
+   nav.classList.remove('unshow');
+   burger.classList.add('show');
+   burger.classList.remove('unshow');
+  //  cross.classList.add('show');
+  //  cross.classList.remove('unshow');
+ });
+ 
+
+ cross.addEventListener('click', () => {
+   nav.classList.add('unshow');
+   nav.classList.remove('show');
+   
+   burger.classList.remove('show');
+   burger.classList.add('unshow');
+   
+  //  cross.classList.add('unshow');
+  //  cross.classList.remove('show');
+ });
+
+  nav.addEventListener('click', () => {
+  nav.classList.add('unshow');
+  nav.classList.remove('show');
+  
+  burger.classList.remove('show');
+  burger.classList.add('unshow');
+  
+  // cross.classList.add('unshow');
+  // cross.classList.remove('show');
+});
+}
+
+document.addEventListener('click', function(e) {
+  var navElement = document.querySelector('.navi');
+  var burger = document.querySelector('#burger');
+  // var cross = document.querySelector('#burgerCross');
+  
+  // Check if the clicked target is not the menu, the burger icon, or the cross icon
+  if (!navElement.contains(e.target) && !burger.contains(e.target) ) {
+      // If the clicked target is outside of these elements, close the menu
+      navElement.classList.add('unshow');
+      navElement.classList.remove('show');
+      burger.classList.add('unshow');
+      burger.classList.remove('show');
+      // cross.classList.add('unshow');
+      // cross.classList.remove('show');
+  }
+});
+
+
+//  document.addEventListener('DOMContentLoaded', nav)
+ 
+//  function nav(){
+//   const burger = document.querySelector('.burger');
+//   const burgerCross = document.querySelector('.burgerCross');
+  
+  
+//   burger.addEventListener('click', ()=>{
+//     nav.classList.add('show');
+//     nav.classList.remove('unshow');
+//     burger.classList.add('unshow');
+//     burger.classList.remove('show');
+//     cross.classList.add('show');
+//     cross.classList.remove('unshow');
+//   })
+// }
+
+
+// document.addEventListener('DOMContentLoaded', navClose)
+ 
+// function navClose(){
+//  const burger = document.querySelector('.burger');
+//  const burgerCross = document.querySelector('.burgerCross');
+//  const nav = document.querySelector('.navi');
+//  burgerCross.addEventListener('click', ()=>{
+//   nav.classList.add('unshow');
+//   nav.classList.remove('show');
+//   burger.classList.add('show');
+//   burger.classList.remove('unshow');
+//   cross.classList.add('unshow');
+//   cross.classList.remove('show');
+//  })
+// }
+
+
+// const burger = document.querySelector('#burger');
+// const cross = document.querySelector('#burgerCross');
+// const nav = document.querySelector('.navi');
+
+// burger.addEventListener('click', () => {
+//    nav.classList.add('show');
+//    nav.classList.remove('unshow');
+//    burger.classList.add('unshow');
+//    burger.classList.remove('show');
+//    cross.classList.add('show');
+//    cross.classList.remove('unshow');
+// });
+
+// cross.addEventListener('click', () => {
+//    nav.classList.add('unshow');
+//    nav.classList.remove('show');
+//    burger.classList.add('show');
+//    burger.classList.remove('unshow');
+//    cross.classList.add('unshow');
+//    cross.classList.remove('show');
+// });
+
+
+// burger.addEventListener('click', () => {
+//   nav.classList.toggle('show');
+//   if(nav.classList.contains('show')) {
+//     burger.style.display = 'none';
+//     cross.style.display = 'block';
+//   } else {
+//     burger.style.display = 'block';
+//     cross.style.display = 'none';
+//   }
+//  });
+ 
+
 // // function isElementInViewPort(element){
 // //   let rect = element.getBoundingClientRect();
 // //   console.log("The bounding Rect of element is ", rect)
