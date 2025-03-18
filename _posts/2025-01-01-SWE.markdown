@@ -1,0 +1,33 @@
+---
+layout: page
+title:  "Society of Women Engineers"
+date:   2025-02-19 13:21:00 +0100
+categories: projects
+desc: Als Webmanager für den Club der Society of Women Engineers an der California State University habe ich eine neue WordPress-Website für unsere Gruppe erstellt, da die alte nicht mehr aktuell und funktionsfähig war. Dies hat dazu geführt, dass das Interesse am Club deutlich gestiegen ist und die Teilnahme an Veranstaltungen zugenommen hat.
+img: "assets/images/swewebsite.png"
+---
+
+Als Webmanager für den Club der Society of Women Engineers an der California State University habe ich eine neue WordPress-Website für unsere Gruppe erstellt, da die alte nicht mehr aktuell und funktionsfähig war. Dies hat dazu geführt, dass das Interesse am Club deutlich gestiegen ist und die Teilnahme an Veranstaltungen zugenommen hat.
+
+
+# Society of Women Engineers
+
+
+### Projektübersicht
+
+Als Webmanager für den Club der Society of Women Engineers an der California State University habe ich eine neue WordPress-Website für unsere Gruppe erstellt, da die alte nicht mehr aktuell und funktionsfähig war. Dies hat dazu geführt, dass das Interesse am Club deutlich gestiegen ist und die Teilnahme an Veranstaltungen zugenommen hat.
+
+[> Link zur Website](https://sites.swe.org/californiastateuniversitylosangeles/)
+
+### Verwendete Technologien
+•	WordPress
+
+### Entwicklungsprozess
+Als ich die Rolle des Webmasters übernommen hatte, habe ich zuerst den vergangenen Stand der alten Website überprüft. Es gab zu dem Zeitpunkt 2, eine war seit mehreren Jahren nicht mehr aktualisiert worden, die andere war unvollständig und unprofessionell. Da wir eine lokale Gruppe einer nationalen Organisation waren, habe ich mich an diese gewendet. Und es stellt sich heraus, dass wir eine WordPress System mit den korrekten Design-Vorlagen anfordern konnten. 
+
+Das Design für die WordPress Website war relativ einfach zu gestalten, da ich die alte Version zur Verfügung hatte und mich dort inspirieren konnte, ebenso wie an anderen lokalen Gruppen lokaler Hochschulen. Zusammen mit dem Rest des Vorstands und unserer Beraterin Prof. Khodayari habe ich mich für eine Struktur der neuen Website entschieden. 
+
+Die Website zu entwickeln war eine interessante Erfahrung, es war mein erstes Projekt mit WordPress. Das meiste war sehr selbsterklärend und das Wissen über andere Frontend-Webtechnologien war ein großer Vorteil, der mir geholfen hat, einige Elemente einfacher zu implementieren und benutzerdefinierte Codeblöcke für einige Funktionen zu schreiben, wie z. B. das Kontaktformular oder die Discord-Funktion. 
+
+
+![Bild der fertigen Website](../../../../assets/images/swewebsite.png)
